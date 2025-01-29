@@ -1,3 +1,4 @@
+@import "tailwindcss/theme.css";
 @import "tailwindcss/utilities.css";
 
 /* Reset settings */
@@ -14,4 +15,149 @@ body {
 * {
     padding: 0;
     margin: 0;
+}
+
+html {
+    --color-text-brand: #007bff;
+    --color-surface-surface-card: #ffffff;
+    --color-text-primary: #1f2123;
+    --color-primary-800: #014eac;
+
+    --color-surface-surface-secondary: #adb6be;
+    font-size: 16px;
+}
+@utility px-section-secondary {
+    background-color: #f7f9fa;
+    padding: 4rem 0.5rem;
+    display: grid;
+    place-content: center;
+}
+@utility px-form-container {
+    border: 2px solid #007bff;
+    max-width: 30rem;
+    border-radius: 12px;
+    padding: 2rem 1rem;
+    display: grid;
+    gap: 2rem;
+    background-color: var(--color-surface-surface-card);
+}
+
+@utility px-text-center {
+    text-align: center;
+}
+@utility px-text-brand {
+    color: var(--color-text-brand);
+}
+@utility px-body-text {
+    font-size: 1.125rem;
+    line-height: 1.667;
+}
+@utility px-body-text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25;
+}
+@utility px-header-secondary-brand {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.3125;
+    color: var(--color-text-brand);
+}
+@utility px-form {
+    display: grid;
+    gap: 1.5rem;
+    @apply md:px-8;
+}
+
+@utility px-label {
+    font-size: 0.8125rem;
+    line-height: 1.3;
+    color: var(--color-text-primary);
+    display: grid;
+    gap: 0.5rem;
+    cursor: pointer;
+    &:has(select) {
+        column-gap: 0.75rem;
+        grid-template-columns: 1fr min-content;
+        & > :nth-child(1) {
+            grid-area: 2/1;
+        }
+        & > :nth-child(2) {
+            grid-area: 2/2;
+        }
+    }
+}
+.px-label:has(select) {
+}
+
+@utility px-input-primary {
+    border: 1px solid var(--color-surface-surface-secondary);
+    border-radius: 0.5rem;
+    @apply px-body-text;
+    cursor: pointer;
+    padding: 1rem;
+    padding-inline-end: 2rem;
+    &:is(select) {
+        appearance: none;
+        padding-inline-end: 3rem;
+        background: url("/caret-down.svg") 1rem 50% / 0.75rem no-repeat;
+    }
+
+    &:user-valid {
+        background: url("/valid.svg") 1rem 50%/ 1.5rem no-repeat;
+    }
+    &:user-invalid {
+        background: url("/invalid.svg") 1rem 50%/ 1.5rem no-repeat;
+    }
+    &:focus {
+        outline: 2px solid var(--color-text-brand);
+    }
+}
+
+@utility px-ltr-end {
+    direction: ltr;
+    text-align: end;
+}
+@utility px-label-checkbox {
+    @apply px-body-text-sm;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row-reverse;
+    align-items: center;
+    cursor: pointer;
+}
+
+@utility px-checkbox-primary {
+    appearance: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0.25rem;
+    border: 1px solid var(--color-surface-surface-secondary);
+    width: 1.25rem;
+    aspect-ratio: 1;
+    &:checked {
+        background:
+            url("/check-mark.svg") 50% 50% / 65% no-repeat,
+            var(--color-text-brand);
+        border-color: var(--color-text-brand);
+    }
+}
+
+@utility px-button-primary {
+    @apply px-body-text;
+    font-weight: 700;
+    color: var(--color-surface-surface-card);
+    background-color: var(--color-text-brand);
+    border-radius: 9999px;
+    padding: 0.5rem 3.5rem;
+    text-decoration: none;
+    border: none;
+
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 0.5rem;
+    &:hover {
+        background-color: var(--color-primary-800);
+    }
 }
