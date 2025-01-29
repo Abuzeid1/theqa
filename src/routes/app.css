@@ -177,7 +177,7 @@ html {
     align-items: center;
     background-color: #fbbf0d;
     &:hover {
-        background-colo: #ffe483;
+        background-color: #ffe483;
     }
 }
 .px-portfolio-link-second {
