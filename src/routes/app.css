@@ -161,3 +161,28 @@ html {
         background-color: var(--color-primary-800);
     }
 }
+
+.px-portfolio-link {
+    border-radius: 9999px;
+    font-size: 1.25rem;
+    line-height: 1.67;
+    font-weight: 700;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    color: #1f2123;
+}
+.px-portfolio-link-first {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    background-color: #fbbf0d;
+    &:hover {
+        background-colo: #ffe483;
+    }
+}
+.px-portfolio-link-second {
+    background-color: #ffffff;
+    &:hover {
+        background-color: #e1e8ef;
+    }
+}

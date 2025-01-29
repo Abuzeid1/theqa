@@ -108,15 +108,6 @@
         }
     }
 
-    .px-portfolio-link {
-        border-radius: 9999px;
-        font-size: 1.25rem;
-        line-height: 1.67;
-        font-weight: 700;
-        padding: 0.5rem 1.5rem;
-        text-decoration: none;
-        color: #1f2123;
-    }
     .px-portfolio-links-container {
         display: flex;
         flex-wrap: wrap;
@@ -124,15 +115,6 @@
         gap: 0.5rem;
     }
 
-    .px-portfolio-link-first {
-        display: flex;
-        gap: 0.5rem;
-        align-items: center;
-        background-color: #fbbf0d;
-    }
-    .px-portfolio-link-second {
-        background-color: #ffffff;
-    }
     @container (max-width: 60rem) {
         .px-portfolio-links-container {
             position: absolute;
