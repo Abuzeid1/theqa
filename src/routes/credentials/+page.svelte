@@ -40,10 +40,7 @@
         background: white;
         list-style-type: none;
         grid-auto-rows: 1fr;
-        grid-template-columns: repeat(
-            auto-fit,
-            minmax(max(33%, 25rem), 1fr)
-        );
+        grid-template-columns: repeat(auto-fit, minmax(max(33%, 25rem), 1fr));
     }
 
     @container (min-width: 25rem) {
@@ -53,8 +50,7 @@
     }
     @container (min-width: 70rem) {
         .px-credentials-list {
-            gap: 2rem; */
-            /* grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
         }
     }
     .px-credentials-list-item-symbol {

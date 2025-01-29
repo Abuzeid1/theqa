@@ -1,3 +1,6 @@
+@import "tailwindcss/utilities.css";
+
+/* Reset settings */
 @font-face {
     font-family: almarai;
     src: url(/Almarai.woff2);
