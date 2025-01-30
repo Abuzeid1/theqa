@@ -29,9 +29,10 @@
                 حجم المحفظة
 
                 <svg
-                    width="12"
-                    height="12"
+                    width="10"
+                    height="10"
                     viewBox="0 0 12 12"
+                    style="margin-inline-start: .25rem ;"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                 >
@@ -296,7 +297,7 @@
         gap: 0.5rem;
     }
 
-    /* .px-portfolio-link-first {
+    .px-portfolio-link-first {
         display: flex;
         gap: 0.5rem;
         align-items: center;
@@ -305,5 +306,5 @@
     .px-portfolio-link-second {
         place-self: start;
         background-color: #ffffff;
-    } */
+    }
 </style>
