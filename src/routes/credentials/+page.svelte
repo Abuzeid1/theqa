@@ -40,6 +40,7 @@
         background: white;
         list-style-type: none;
         grid-auto-rows: 1fr;
+        padding: 0;
         grid-template-columns: repeat(1, 1fr);
     }
 
