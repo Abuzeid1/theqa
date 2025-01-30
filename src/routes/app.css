@@ -18,7 +18,9 @@ html {
     --color-surface-surface-secondary: #adb6be;
     font-size: 16px;
 }
-.px-portfolio-section-container * {
+.px-portfolio-section-container *,
+.px-section-secondary *,
+.px-credentials-list-container * {
     margin: 0;
     padding: 0;
 }
