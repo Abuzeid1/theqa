@@ -444,3 +444,54 @@ html {
         line-height: 1.67;
     }
 }
+/* features component */
+.px-features-container {
+    display: grid;
+    padding-inline: 0.5rem;
+    gap: 2rem;
+    background-color: white;
+    grid-auto-rows: min-content;
+    & * {
+        padding: 0;
+        margin: 0;
+    }
+    & article {
+        display: grid;
+        gap: 0.5rem;
+        grid-auto-rows: min-content;
+    }
+    & h3 {
+        font-size: 1.125rem;
+        line-height: 1.667;
+        font-weight: 700;
+    }
+    & p {
+        font-size: 1.125rem;
+        line-height: 1.667;
+    }
+    & ul {
+        display: grid;
+        list-style-type: none;
+        gap: 0.5rem;
+        margin-block-start: 1rem;
+    }
+
+    & li {
+        font-size: 1rem;
+        line-height: 1.5;
+        padding-inline-start: 2.5rem;
+        background: url("/valid.svg") right 0/ 1.5rem no-repeat;
+    }
+    & ul.px-negative li {
+        background-image: url("/x-circle.svg");
+    }
+}
+
+@media (min-width: 60rem) {
+    .px-features-container {
+        padding-inline: 2rem;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* end features component */
